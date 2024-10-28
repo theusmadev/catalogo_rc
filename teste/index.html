@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RADCOM CATÁLOGO</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            background-color: rgb(3, 30, 57);
+            color: white; /* Cor do texto */
+            
+        }
+        .container {
+            display: flex; /* Usando flexbox para alinhar os itens */
+            justify-content: space-between; /* Espaça entre o texto e a imagem */
+            align-items: center; /* Alinha verticalmente ao centro */
+            margin: 20px; /* Margem ao redor do contêiner */
+            padding: 10;
+        }
+        #imgpos1 {
+            height: 250px; /* Altura da imagem */
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        #imgpos1:hover {
+            transform: scale(1.1); /* Aumenta a imagem em 10% */
+        }
+        button {
+            display: flex;
+            margin: 20px
+        }
+    </style>
+</head>
+<body>
+    <nav> 
+        <a href="https://www.radcomalarmes.com.br/" target="_blank">
+            <img src="images/logo_rcradcom_branco.png" alt="Logo empresa" style="height: 150px;">
+        </a>
+    </nav>
+    
+    <div class="container">
+        <h1 class="title" id="texto">CONHEÇA <br> NOSSOS <br> SERVIÇOS</h1>  
+        <img src="images/mktcel.png" alt="imgcelular" id="imgpos1">
+    </div>
+
+    <button class="button">ACESSE O CATÁLOGO</button>      
+</body>
+</html>
